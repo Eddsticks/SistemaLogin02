@@ -2,7 +2,8 @@ package Modelo;
 
 import java.io.*;
 import java.util.ArrayList;
-import java.util.Collections; // Se puede usar para retornar una lista inmutable (opcional)
+import java.util.Collections;
+import java.util.List;
 
 /**
  * Clase encargada de encapsular la lógica para manipular las tareas personales
@@ -48,8 +49,8 @@ public class DatosSesion {
      *
      * @return Lista de objetos Tarea.
      */
-    public ArrayList<Tarea> getTareas() {
-        return new ArrayList<>(tareas);
+    public List<Tarea> getTareas() {
+        return Collections.unmodifiableList(tareas);
     }
 
     /**
