@@ -39,7 +39,7 @@ public class GestorUsuarios {
      */
     public boolean registrar(String nombre, String clave) {
         try (FileWriter fileWriter = new FileWriter(NOMBRE_ARCHIVO, true); PrintWriter printWriter = new PrintWriter(fileWriter)) {
-            printWriter.println(nombre + ";" + clave);
+            printWriter.println("\n" + nombre + ";" + clave);
             System.out.println("Usuario '" + nombre + "' registrado exitosamente");
             return true;
 
