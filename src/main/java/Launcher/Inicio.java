@@ -7,6 +7,7 @@ import Vista.ConsolaLogin;
  */
 public class Inicio {
     public static void main(String[] args) {
-        // TODO: Crear instancia de ConsolaLogin y llamar a menu()
+        ConsolaLogin consolaLogin = new ConsolaLogin();
+        consolaLogin.menu();
     }
 }
